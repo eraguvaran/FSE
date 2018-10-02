@@ -1,0 +1,143 @@
+<html>
+<style>
+    input[type=text], input[type=email], input[type=url], textarea {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    table {
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px;
+        padding-left: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: large;
+    }
+    h6{
+        color:red;
+        text-align: right;
+    }
+    input:required:invalid, input:focus:invalid, textarea:invalid, textarea:focus:invalid {
+        background-image: url(images/invalid.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: right;
+        border: 2px solid red;
+    }
+    input:required:valid, input:focus:valid, textarea:valid, textarea:focus:valid {
+        background-image: url(images/valid.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: right;
+        border: 2px solid green;
+    }
+    hr{
+        opacity: 0.2;
+    }
+    #myForm:valid input[type=submit] {
+        width: 30%;
+        background-color: rgb(22, 197, 28);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }   
+    #myForm:invalid input[type=submit] {
+        width: 30%;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <form id="myForm">
+        <table>
+            <tr>
+                <td>
+                    <h1>Contact Us</h1>
+                </td>
+                <td>
+                    <h6>* Denotes Required Field</h6>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"><b>Name:</b></label>
+                </td>
+                <td>
+                    <input type="text" placeholder="John Doe" name="name" required
+                    pattern="[A-Za-z]+">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email"><b>Email:</b></label>
+                </td>
+                <td>
+                    <input type="email" placeholder="John.Doe@example.com" name="email" id="email" 
+                    required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="website"><b>Website:</b></label>
+                </td>
+                <td>
+                    <input type="url" placeholder="http://johndoe.com" name="website" required
+                    pattern="https?://.+">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="message"><b>Message:</b></label>
+                </td>
+                <td>
+                    <textarea rows="4" cols="50" name="message" required></textarea>
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="2" style="width:100%">
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="submitform" value="Submit Form">
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </form>
+</body>
+</html>
