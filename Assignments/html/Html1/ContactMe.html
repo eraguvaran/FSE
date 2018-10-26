@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+<style>
+	.mandatory {
+		color: red;
+	}
+</style>
+
+<body>
+
+	<header>
+		<h2>
+			<U>Contact Us</U>
+		</h2>
+	</header>
+
+	<form>
+		<table>
+			<tr>
+				<td>
+					Name:
+					<span class="mandatory">*</span>
+				</td>
+				<td align="right">
+					<input type="text" id="firstName" name="firstName" required placeholder="First name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Contact Number:
+					<span class="mandatory">*</span>
+				</td>
+				<td align="right">
+					<input type="number" name="contactNumber" id="contactNumber" required maxlength="10" placeholder="Contact Number">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Email:
+					<span class="mandatory">*</span>
+				</td>
+				<td align="right">
+
+					<input type="email" name="email" placeholder="Email Address" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Remarks:
+					<span class="mandatory">*</span>
+				</td>
+
+				<td align="right">
+
+					<textarea id="remarks" name="remarks" placeholder="Remarks" required style="height:100px"> </textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center">
+					<input type="submit" value="Submit">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
