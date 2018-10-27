@@ -1,6 +1,10 @@
 <html>
+
 <style>
-    input[type=text], input[type=email], input[type=url], textarea {
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    textarea {
         width: 40%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -9,6 +13,7 @@
         border-radius: 4px;
         box-sizing: border-box;
     }
+
     table {
         width: 100%;
         border-radius: 5px;
@@ -17,27 +22,54 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: large;
     }
-    h6{
-        color:red;
+
+    .form_hint,
+    .required_notification {
+        font-size: 11px;
+    }
+
+    .form_hint {
+        background: #d45252;
+        border-radius: 3px 3px 3px 3px;
+        color: white;
+        margin-left: 8px;
+        padding: 1px 6px;
+        z-index: 999;
+        position: absolute;
+        display: none;
+    }
+
+    h6 {
+        color: red;
         text-align: right;
     }
-    input:required:invalid, input:focus:invalid, textarea:invalid, textarea:focus:invalid {
-        background-image: url(images/invalid.png);
+
+    input:required:invalid,
+    input:focus:invalid,
+    textarea:invalid,
+    textarea:focus:invalid {
+        background-image: url(images/mandatory.png);
         background-size: 20px;
         background-repeat: no-repeat;
         background-position: right;
         border: 2px solid red;
     }
-    input:required:valid, input:focus:valid, textarea:valid, textarea:focus:valid {
+
+    input:required:valid,
+    input:focus:valid,
+    textarea:valid,
+    textarea:focus:valid {
         background-image: url(images/valid.png);
         background-size: 20px;
         background-repeat: no-repeat;
         background-position: right;
         border: 2px solid green;
     }
-    hr{
+
+    hr {
         opacity: 0.2;
     }
+
     #myForm:valid input[type=submit] {
         width: 30%;
         background-color: rgb(22, 197, 28);
@@ -47,7 +79,8 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
-    }   
+    }
+
     #myForm:invalid input[type=submit] {
         width: 30%;
         padding: 14px 20px;
@@ -57,6 +90,10 @@
         cursor: pointer;
     }
 </style>
+
+<head>
+    <title>Contact Us</title>
+</head>
 
 <body>
     <form id="myForm">
@@ -76,11 +113,12 @@
             </tr>
             <tr>
                 <td>
-                    <label for="name"><b>Name:</b></label>
+                    <label for="name">
+                        <b>Name:</b>
+                    </label>
                 </td>
                 <td>
-                    <input type="text" placeholder="John Doe" name="name" required
-                    pattern="[A-Za-z]+">
+                    <input type="text" placeholder="John Doe" name="name" required pattern="[A-Za-z]+">
                 </td>
             </tr>
             <tr>
@@ -90,11 +128,12 @@
             </tr>
             <tr>
                 <td>
-                    <label for="email"><b>Email:</b></label>
+                    <label for="email">
+                        <b>Email:</b>
+                    </label>
                 </td>
                 <td>
-                    <input type="email" placeholder="John.Doe@example.com" name="email" id="email" 
-                    required>
+                    <input type="email" placeholder="John.Doe@example.com" name="email" id="email" required>
                 </td>
             </tr>
             <tr>
@@ -104,11 +143,12 @@
             </tr>
             <tr>
                 <td>
-                    <label for="website"><b>Website:</b></label>
+                    <label for="website">
+                        <b>Website:</b>
+                    </label>
                 </td>
                 <td>
-                    <input type="url" placeholder="http://johndoe.com" name="website" required
-                    pattern="https?://.+">
+                    <input type="url" placeholder="http://johndoe.com" name="website" required pattern="https?://.+">
                 </td>
             </tr>
             <tr>
@@ -118,7 +158,9 @@
             </tr>
             <tr>
                 <td>
-                    <label for="message"><b>Message:</b></label>
+                    <label for="message">
+                        <b>Message:</b>
+                    </label>
                 </td>
                 <td>
                     <textarea rows="4" cols="50" name="message" required></textarea>
@@ -140,4 +182,5 @@
         <hr>
     </form>
 </body>
+
 </html>
