@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JS01</title>
+
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Display Current Day & Time -->
+    <h3>1. Display Current Day & Time</h3>
+    <p>Today is :
+        <span id="pid"></span>.</p>
+    <p>Current time is :
+        <span id="hrs"></span> :
+        <span id="min"></span> :
+        <span id="sec"></span>
+    </p>
+    <!-- Print the Content -->
+    <br>
+    <h3>2. Print the content</h3>
+    <br />
+    <button id="printButton" onclick="printPage">print</button>
+
+    <!-- Display Current Date -->
+    <br>
+    <h3>3. Display Current Date</h3>
+    <br /> Current Date :
+    <span id="id1"></span>,
+    <span id="id2"></span>
+
+    <!-- Random Number -->
+
+    <br>
+    <h3>4. Random Number</h3>
+
+    Enter a number :
+    <input type="text" id="inp" />
+
+    <button id="btnCompare" onclick="compareRandom">Submit</button>
+
+    <span id="displayRandomResult"></span>
+
+    <!-- Calculation -->
+    <br>
+    <h3>5. Calculator</h3>
+
+    1st Number :
+    <input type="text" id="inp1" />
+    <br/> 2nd Number :
+    <input type="text" id="inp2" />
+    <br />
+    <button id="mulbtn" onclick="multiply">Multiply</button>
+    <button id="divbtn" onclick="divide">Divide</button>
+    <br /> The Result is :
+    <br />
+    <span id="displayCalculatorResult"></span>
+
+
+
+    <!-- UpperCase -->
+    <br>
+    <h3>7. Uppercase</h3>
+    Enter the text :
+    <input type="text" id="txt" />
+    <br />
+    <br />
+    <button id="uprcase" onclick="Uppercase">
+        Submit
+    </button>
+    <br />
+    <span id="result"></span>
+
+    <!-- Compare -->
+    <br>
+    <h3>8. Compare</h3>
+
+    Enter the text :
+    <input type="text" id="txtCompare" />
+    <br />
+    <br />
+    <button id="strCpr" onclick="compareString">
+        Submit
+    </button>
+    <br />
+    <span id="Compareresult"></span>
+
+    <!-- Copy -->
+    <br>
+    <h3>9. Copy</h3>
+    Enter the text :
+    <input type="text" id="txtCopy" />
+    <br />
+    <br />
+    <button id="strCpy" onclick="newstring">
+        Submit
+    </button>
+    <br />
+    <span id="copyresult"></span>
+
+    <!-- swap -->
+    <br>
+    <h3>10. Swap</h3>
+    <b>View Console for output </b>
+
+    <!-- Reverse -->
+    <br>
+    <h3>11. Reverse</h3>
+    <b>View Console for output </b>
+
+    <!-- Alphabetical Order -->
+    <br>
+    <h3>12. Alphabetical Order</h3>
+    <b>View Console for output </b>
+
+    <!-- Longest word, Unique Characters and Number of Occurences -->
+    <br>
+    <h3>13. Longest word, Unique Characters and Number of Occurences</h3>
+    <b>View Console for output </b>
+
+    <!-- string id of random characters -->
+    <br>
+    <h3>14. string id of random characters</h3>
+    <b>View Console for output </b>
+
+    <!-- Longest Substring without repeating characters -->
+    <br>
+    <h3>15. Longest Substring without repeating characters</h3>
+    <b>View Console for output </b>
+
+    <!-- Get Form Value -->
+
+    <br>
+    <h3>16. Get Form Value</h3>
+    <form id="form1" onsubmit="getFormvalue()">
+        First name:
+        <input type="text" name="fname" value="">
+        <br> Last name:
+        <input type="text" name="lname" value="">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Value of href,  hreflang, rel,  target and type -->
+    <br>
+    <h3>17. Value of href, hreflang, rel, target and type</h3>
+    <p>
+        <a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.cognizant.com/"></a>
+    </p>
+    <button onclick="getAttributes()">Click here to get the attribute's value</button>
+
+    <!-- Value of href,  hreflang, rel,  target and type -->
+    <br>
+    <h3>18. Insert New Row</h3>
+
+    <table id="sampleTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" onclick="insert_Row()" value="Insert row">
+
+    <!-- Change Content -->
+    <br>
+    <h3>19. Change content</h3>
+
+    <table id="myTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+        <tr>
+            <td>Row3 cell1</td>
+            <td>Row3 cell2</td>
+        </tr>
+    </table>
+    <form></form>
+    <input type="button" onclick="changeContent()" value="Change content">
+    </form>
+
+    <!-- Remove Items from dropdown list -->
+    <br>
+    <h3>20. Remove Items from dropdown list</h3>
+    <form>
+        <select id="colorSelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+        </select>
+        <input type="button" onclick="removecolor()" value="Select and Remove">
+    </form>
+
+    <!-- URL -->
+    <br>
+    <h3>6. URL</h3>
+
+    <script>
+        // Display Current Day & Time
+        var d = new Date();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.getElementById("pid").innerHTML = days[d.getDay()];
+        document.getElementById("hrs").innerHTML = d.toLocaleString('en-US', { hour: 'numeric', hour12: true });
+        document.getElementById("min").innerHTML = d.getMinutes();
+        document.getElementById("sec").innerHTML = d.getSeconds();
+
+        var printer = document.getElementById("printButton");
+        //Print page content
+        function printPage() {
+            window.print();
+        }
+
+        printer.addEventListener("click", printPage);
+
+        //display Current daatetime
+        var d = new Date();
+        var format1 = (d.getMonth() + 1) + '/' + d.getDate() + '/' + d.getFullYear();
+        var format2 = (d.getMonth() + 1) + '-' + d.getDate() + '-' + d.getFullYear();
+        document.getElementById("id1").innerHTML = format1;
+        document.getElementById("id2").innerHTML = format2;
+
+        //random number
+        var btn = document.getElementById("btnCompare");
+
+        function getRadNo(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+        function compareRandom() {
+            var rdn = getRadNo(10);
+            var inp = document.getElementById("inp").value;
+            if (parseInt(rdn) === parseInt(inp))
+                document.getElementById("displayRandomResult").innerHTML = "Good Work";
+            else
+                document.getElementById("displayRandomResult").innerHTML = "Not matched";
+        }
+        btn.addEventListener("click", compareRandom);
+
+        //calculator
+
+        var input1;
+        var input2;
+
+        var btn1 = document.getElementById("mulbtn");
+        var btn2 = document.getElementById("divbtn");
+
+        function multiply() {
+            input1 = document.getElementById("inp1").value;
+            input2 = document.getElementById("inp2").value;
+            document.getElementById("displayCalculatorResult").innerHTML = input1 * input2;;
+
+        }
+
+        function divide() {
+            input1 = document.getElementById("inp1").value;
+            input2 = document.getElementById("inp2").value;
+            document.getElementById("displayCalculatorResult").innerHTML = input1 / input2;
+
+        }
+
+        btn1.addEventListener("click", multiply);
+        btn2.addEventListener("click", divide);
+
+        //URL
+        document.write(document.URL);
+
+        //Uppercase
+        var btn1 = document.getElementById("uprcase");
+        function Uppercase() {
+            var input = document.getElementById("txt").value;
+
+            input = input.split(" ");
+
+            for (var i = 0, x = input.length; i < x; i++) {
+                input[i] = input[i][0].toUpperCase() + input[i].substr(1);
+            }
+
+            var strop = input.join(" ")
+
+            document.getElementById("result").innerHTML = strop;
+        }
+        btn1.addEventListener("click", Uppercase);
+
+        //compa re
+        var btn1 = document.getElementById("strCpr");
+        function compareString() {
+            var input = document.getElementById("txtCompare").value;
+
+            var ps = input.replace(/[^p]/g, "");
+
+            var ss = input.replace(/[^s]/g, "");
+
+            var p_num = ps.length;
+            var s_num = ss.length;
+
+            if (p_num === s_num)
+                document.getElementById("Compareresult").innerHTML = "true";
+            else
+                document.getElementById("Compareresult").innerHTML = "false";
+
+        }
+        btn1.addEventListener("click", compareString);
+
+        //Copy
+        var btn1 = document.getElementById("strCpy");
+        function newstring(str) {
+            var str = document.getElementById("txtCopy").value;
+            if (str.length >= 3) {
+                result_str = str.substring(str.length - 3);
+                document.getElementById("copyresult").innerHTML = result_str + result_str + result_str + result_str;
+            }
+            else
+                document.getElementById("copyresult").innerHTML = "false";
+        }
+        btn1.addEventListener("click", newstring)
+
+        //swap
+        function swap(arra) {
+            [arra[0], arra[arra.length - 1]] = [arra[arra.length - 1], arra[0]];
+            return arra;
+        }
+        console.log("Swap");
+        console.log(swap([1, 2, 3, 4]));
+        console.log(swap([0, 2, 1]));
+        console.log(swap([3]));
+
+        //reverse
+        function string_reverse(str) {
+            return str.split("").reverse().join("");
+        }
+        console.log("Reverse");
+        console.log(string_reverse("12345"));
+        console.log(string_reverse("658"));
+        console.log(string_reverse("75214"));
+
+        //alphabetical order
+        function alphabet_Soup(str) {
+
+            return str.split("").sort().join("");
+
+        }
+        console.log("Alphabetical Order");
+        console.log(alphabet_Soup("assignment"));
+
+        console.log(alphabet_Soup("test"));
+
+        //Longest word, Unique Characters and Number of Occurences
+        function findLongestWord(str) {
+            const stringArray = str.split(" ");
+            const longestWord = stringArray.reduce((a, b) => {
+                if (b.length > a.length) {
+                    return b;
+                } else {
+                    return a;
+                }
+            });
+            return longestWord;
+        }
+
+        function unique_char(str1) {
+            var str = str1;
+            var uniql = "";
+            for (var x = 0; x < str.length; x++) {
+
+                if (uniql.indexOf(str.charAt(x)) == -1) {
+                    uniql += str[x];
+
+                }
+            }
+            return uniql;
+        }
+        function Char_Counts(str1) {
+            var uchars = {};
+            str1.replace(/\S/g, function (l) { uchars[l] = (isNaN(uchars[l]) ? 1 : uchars[l] + 1); });
+            return uchars;
+        }
+        console.log("Character Counts");
+        console.log(Char_Counts("The quick brown fox jumps over the lazy dog"));
+        console.log("Unique Characters");
+        console.log(unique_char("thequickbrownfoxjumpsoverthelazydog"));
+        console.log("Longest Word");
+        console.log(findLongestWord("The longest word in a sentence"));
+
+        //string id of random characters
+        function makeid(l) {
+            var text = "";
+            var char_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            for (var i = 0; i < l; i++) {
+                text += char_list.charAt(Math.floor(Math.random() * char_list.length));
+            }
+            return text;
+        }
+        console.log("string id of random characters");
+        console.log(makeid(5));
+
+        //Longest subString
+        function longest_substring_without_repeating_characters(input) {
+            var chars = input.split('');
+            var curr_char;
+            var str = "";
+            var longest_string = "";
+            var hash = {};
+            for (var i = 0; i < chars.length; i++) {
+                curr_char = chars[i];
+                if (!hash[chars[i]]) {
+                    str += curr_char;
+                    hash[chars[i]] = { index: i };
+                }
+                else {
+                    if (longest_string.length <= str.length) {
+                        longest_string = str;
+                    }
+                    var prev_dupeIndex = hash[curr_char].index;
+                    var str_FromPrevDupe = input.substring(prev_dupeIndex + 1, i);
+                    str = str_FromPrevDupe + curr_char;
+                    hash = {};
+                    for (var j = prev_dupeIndex + 1; j <= i; j++) {
+                        hash[input.charAt(j)] = { index: j };
+                    }
+                }
+            }
+            return longest_string.length > str.length ? longest_string : str;
+        }
+        console.log("Longest Substring without repeating characters");
+        console.log(longest_substring_without_repeating_characters("google.com"));
+
+        console.log(longest_substring_without_repeating_characters("example.com"));
+
+        //get form value
+        function getFormvalue() {
+            var x = document.getElementById("form1");
+            for (var i = 0; i < x.length; i++) {
+                if (x.elements[i].value != 'Submit') {
+                    console.log(x.elements[i].value);
+                }
+            }
+        }
+        //Value of href,  hreflang, rel,  target and type
+        function getAttributes() {
+            var u = document.getElementById("w3r").href;
+            alert('The value of the href attribute of the link is : ' + u);
+            var v = document.getElementById("w3r").hreflang;
+            alert('The value of the hreflang attribute of the link is : ' + v);
+            var w = document.getElementById("w3r").rel;
+            alert('The value of the rel attribute of the link is : ' + w);
+            var x = document.getElementById("w3r").target;
+            alert('The value of the taget attribute of the link is : ' + x);
+            var y = document.getElementById("w3r").type;
+            alert('The value of the type attribute of the link is : ' + y);
+        }
+
+        //Insert new row
+        function insert_Row() {
+            var x = document.getElementById('sampleTable').insertRow(0);
+            var y = x.insertCell(0);
+            var z = x.insertCell(1);
+            y.innerHTML = "New Cell1";
+            z.innerHTML = "New Cell2";
+        }
+        //Change Content
+        function changeContent() {
+            rn = window.prompt("Input the Row number(0,1,2)", "0");
+            cn = window.prompt("Input the Column number(0,1)", "0");
+            content = window.prompt("Input the Cell content");
+            var x = document.getElementById('myTable').rows[parseInt(rn, 10)].cells;
+            x[parseInt(cn, 10)].innerHTML = content;
+
+        }
+
+        //Reove Items from dropdown list
+        function removecolor() {
+            var x = document.getElementById("colorSelect");
+            x.remove(x.selectedIndex);
+        }
+    </script>
+</body>
+
+</html>

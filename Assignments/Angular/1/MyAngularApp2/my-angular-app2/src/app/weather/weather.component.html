@@ -1,0 +1,10 @@
+<p>
+  weather works!
+</p>
+<input type="text" style="width:130px" class="form-control" id="txtWeather" 
+required
+ 
+ name="txtWeather"> 
+ <!-- [(ngModel)]="txtWeather"   -->
+<input type="button" value="GetWeatherInfo" (click)="GetWeatherInfo()" >
+<div>{{data |json}}</div>   

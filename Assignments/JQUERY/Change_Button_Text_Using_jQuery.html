@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            var myFunction = function () {
+                var $button1 = $("#button1");
+
+                if ($button1.val() == "Cancel") {
+                    $button1.val("Enabled");
+                }
+                else {
+                    $button1.val("Cancel");
+                }
+
+            };
+
+            $("#button1").click(function () {
+                myFunction();
+
+            });
+        });
+    </script>
+</head>
+<metacharset="utf-8">
+    <metaname="viewport" content="width=device-width">
+        <title>Change button text using jQuery.</title>
+        </head>
+        Click to to change the button text using Jquery
+
+        <body>
+            <input type='button' value='Cancel' id='button1' />
+        </body>
+
+</html>

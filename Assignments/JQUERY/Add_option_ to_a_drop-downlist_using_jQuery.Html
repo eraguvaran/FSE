@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	
+     var loadOptions = function() {
+       
+       var selectValues = { "1": "Blue", "2": "Yellow" , "3": "Orange"};
+       
+       $.each(selectValues, function(key, value) {
+         $('#myColors')
+              .append($('<option>', { value : key })
+              .text(value));
+        });
+
+	}; 
+
+   var UnloadOptions = function() {
+         
+        var selectValues = { "1": "Blue", "2": "Yellow" , "3": "Orange"};
+       
+        $.each(selectValues, function(key, value) {
+            $("#myColors option[value='"+key+"']").each(function() {
+              $(this).remove();
+           });
+        });
+	}; 
+
+    $("#button1").click(function(){
+        loadOptions();
+    });
+    
+    $("#button2").click(function(){
+        UnloadOptions(); 
+    });
+    
+});
+</script>
+</head>
+  <metacharset="utf-8">
+   <metaname="viewport"content="width=device-width"> 
+   <title>Add options to a drop-downlist using jQuery.</title> 
+   </head> 
+   Click to load 3 more options to a drop-downlist using jQuery.
+    <body>
+     </br> </br>
+     <input type='button'value='Load Options'id='button1'/>
+      <input type='button'value='Reset Options'id='button2'/>
+    </br> </br> </br>
+    <select id='myColors'>
+     <option value="Red">Red</option> 
+     <option value="Green">Green</option>  
+     <option value="White">White</option>
+     <option value="Black">Black</option>
+	</select>
+
+    </body>
+ 
+</html>

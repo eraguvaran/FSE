@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+
+      var myFunction = function () {
+        var $Name1 = $("#name1");
+        var $Name2 = $("#name2");
+        var $DivContent = $("#divContent");
+
+        $DivContent.text("");
+        if ($Name1.val().trim() != "" && $Name2.val().trim() != "") {
+
+          $DivContent.text("Firstname & LastName are not empty");
+        }
+        else if ($Name1.val().trim() != "") {
+          $DivContent.text("LastName empty");
+        }
+        else if ($Name2.val().trim() != "") {
+          $DivContent.text("Firstname empty");
+        }
+        else {
+          $DivContent.text("Firstname & LastName empty");
+        }
+
+      };
+
+      $("#name1").change(myFunction);
+      $("#name2").change(myFunction);
+    });
+  </script>
+</head>
+<metacharset="utf-8">
+  <metaname="viewport" content="width=device-width">
+    <title>How to detect a textbox's content has changed using jQuery</title>
+    </head>
+
+    <body>
+      <formaction="demo_form.asp">
+        <span id="divContent"></span>
+        <br>
+        <br> Firstname:
+        <input type="text" id="name1" name="fname">
+        <br> Lastname:
+        <input type="text" id="name2" name="lname">
+        <br>
+        <input type="submit" id="btn1" value="Submit">
+        </form>
+    </body>
+
+</html>
