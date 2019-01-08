@@ -9,7 +9,6 @@ import { CurrencyComponent } from './currency/currency.component';
 import {  RouterModule, Routes} from '@angular/router'
 import { FormsModule} from '@angular/forms';
 
-import { config } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 
 

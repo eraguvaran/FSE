@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SharedService} from '../shared.Service'
 
 @Component({
   selector: 'app-currency',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./currency.component.css']
 })
 export class CurrencyComponent implements OnInit {
+ data:any;
+ public txtCurrency: string='USD';
+  constructor(private sharedservice: SharedService) {
+    
 
-  constructor() { }
+   }
 
   ngOnInit() {
   }
 
+  public getCurrencyInfo(){
+    this.sharedservice.getCurrency(this.txtCurrency.toString()).subscribe(res=>
+      {
+        this.data = res;
+      });
+  }
 }

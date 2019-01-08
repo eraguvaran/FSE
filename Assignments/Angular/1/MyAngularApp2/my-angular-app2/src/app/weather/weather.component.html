@@ -1,10 +1,25 @@
-<p>
-  weather works!
-</p>
-<input type="text" style="width:130px" class="form-control" id="txtWeather" 
-required
- 
- name="txtWeather"> 
- <!-- [(ngModel)]="txtWeather"   -->
-<input type="button" value="GetWeatherInfo" (click)="GetWeatherInfo()" >
-<div>{{data |json}}</div>   
+<div class="h1">Yahoo! Weather</div>
+<form>
+<div class="row">
+<div class="col-sm-1">&nbsp;</div>
+<div class="col-sm-2"><label for="city">Enter City Name</label></div>
+<div class="col-sm-3">
+<input type="text" name="city" class="form-control" [(ngModel)]="txtWeather"/></div>
+<div class="col-sm-6">&nbsp;</div>
+</div>
+<div class="row">
+<div class="col-sm-3">&nbsp;</div>
+<div class="col-sm-3">
+<button type="button" style="margin-top:10px;" class="btn btn-primary" (click)="GetWeatherInfo()">Submit</button></div>
+</div>
+</form>
+
+<div class="row"><div class="col-sm-1">&nbsp;</div>
+<div class="col-sm-4">
+<div>
+<i><b>City, Country :</b></i><span *ngIf="data!=null">{{data.query.results.channel.location.city}} &nbsp; {{data.query.results.channel.location.country}}</span></div>
+<div><i><b>Current Condition : </b></i><span *ngIf="data!=null">{{data.query.results.channel.item.condition.text}}</span></div>
+<div><i><b>Current Temperature : </b></i><span *ngIf="data!=null">{{data.query.results.channel.item.condition.temp}}</span></div>
+</div>
+</div>
+

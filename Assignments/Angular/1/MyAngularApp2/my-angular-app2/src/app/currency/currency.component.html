@@ -1,3 +1,22 @@
-  <p>
-    currency works!
-  </p>
+<div class="h1">Currency Details!</div>
+<form>
+<div class="row">
+<div class="col-sm-1">&nbsp;</div>
+<div class="col-sm-2"><label for="USD">Enter Currency</label></div>
+<div class="col-sm-3">
+<input type="text" name="USD" class="form-control" [(ngModel)]="txtcurrency"/></div>
+<div class="col-sm-6">&nbsp;</div>
+</div>
+<div class="row">
+<div class="col-sm-3">&nbsp;</div>
+<div class="col-sm-3">
+<button type="button" class="btnbtn-primary" style="margin-top:10px;" (click)="getCurrencyInfo()">Submit</button></div>
+</div>
+</form>
+<div class="row"><div class="col-sm-1">&nbsp;</div>
+<div class="col-sm-2">
+<div>
+<i><b>Success :</b></i><span *ngIf="data!=null">{{data.success}}</span></div>
+<div><i><b>Error : </b></i><span *ngIf="data!=null">{{data.error.info}}</span></div>
+</div>
+</div>

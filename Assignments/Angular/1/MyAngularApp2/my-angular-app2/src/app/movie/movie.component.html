@@ -1,3 +1,23 @@
-<p>
-  movie works!
-</p>
+<div class="movie">Movie Details!</div>
+<form>
+    <div class="row">
+        <div class="col-sm-1" >&nbsp;</div>
+        <div class="col-sm-2"><label for="movie">Enter Movie Name</label></div>
+    <div class="col-sm-3">
+     <input type="text" name="movie" class="form-control" [(ngModel)]="txtInput"/></div>
+     <div class="col-sm-6" >&nbsp;</div>
+    </div>
+    <div class="row">
+       <div class="col-sm-3" >&nbsp;</div>
+       <div class="col-sm-3" >
+     <button type="button" class="btn btn-primary"  (click)="getData()" >Submit</button></div>
+     </div>
+    </form>
+<div class="row"> <div class="col-sm-1" >&nbsp;</div>
+        <div class="col-sm-2">
+<div>
+    <i><b>Title, Year :</b></i><span *ngIf="data!=null">{{data.Title}} &nbsp; {{data.Year}}</span></div>
+  <div><i><b>Director:</b></i><span *ngIf="data!=null">{{data.Director}}</span></div>
+  <div><i><b>Actors :</b></i><span *ngIf="data!=null">{{data.Actors}}</span></div>
+</div>
+</div>
