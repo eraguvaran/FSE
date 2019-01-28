@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5132957ec4f141cca0b560fd8443e539" Name="Diagram1">
+        <EntityTypeShape EntityType="DOTNETModel.ITEM" Width="1.5" PointX="7.625" PointY="4" />
+        <EntityTypeShape EntityType="DOTNETModel.PODETAIL" Width="1.5" PointX="9.875" PointY="0.875" />
+        <EntityTypeShape EntityType="DOTNETModel.POMASTER" Width="1.5" PointX="7.625" PointY="0.875" />
+        <EntityTypeShape EntityType="DOTNETModel.SUPPLIER" Width="1.5" PointX="5.375" PointY="1" />
+        <AssociationConnector Association="DOTNETModel.FK__PODETAIL__ITCODE__182C9B23" />
+        <AssociationConnector Association="DOTNETModel.FK__PODETAIL__PONO__173876EA" />
+        <AssociationConnector Association="DOTNETModel.FK__POMASTER__SUPLNO__145C0A3F" />
+        <EntityTypeShape EntityType="DOTNETModel.Person1" Width="1.5" PointX="5.375" PointY="3.25" />
+        <EntityTypeShape EntityType="DOTNETModel.Follower1" Width="1.5" PointX="7.625" PointY="1.25" />
+        <EntityTypeShape EntityType="DOTNETModel.Following1" Width="1.5" PointX="7.625" PointY="3.875" />
+        <EntityTypeShape EntityType="DOTNETModel.Tweet1" Width="1.5" PointX="7.625" PointY="6.625" />
+        <EntityTypeShape EntityType="DOTNETModel.Follower" Width="1.5" PointX="3" PointY="6.625" />
+        <EntityTypeShape EntityType="DOTNETModel.Following" Width="1.5" PointX="3" PointY="1.25" />
+        <EntityTypeShape EntityType="DOTNETModel.Person" Width="1.5" PointX="0.75" PointY="3.25" />
+        <EntityTypeShape EntityType="DOTNETModel.Tweet" Width="1.5" PointX="3" PointY="3.875" />
+        <AssociationConnector Association="DOTNETModel.FK__Follower__follow__32E0915F" />
+        <AssociationConnector Association="DOTNETModel.FK__Follower__user_i__31EC6D26" />
+        <AssociationConnector Association="DOTNETModel.FK__Following__follo__2F10007B" />
+        <AssociationConnector Association="DOTNETModel.FK__Following__user___2E1BDC42" />
+        <AssociationConnector Association="DOTNETModel.FK__Tweet__user_id__2B3F6F97" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

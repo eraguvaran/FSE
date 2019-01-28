@@ -1,0 +1,132 @@
+Erorr The view 'SearchUsersByName' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Twitter/SearchUsersByName.aspx
+~/Views/Twitter/SearchUsersByName.ascx
+~/Views/Shared/SearchUsersByName.aspx
+~/Views/Shared/SearchUsersByName.ascx
+~/Views/Twitter/SearchUsersByName.cshtml
+~/Views/Twitter/SearchUsersByName.vbhtml
+~/Views/Shared/SearchUsersByName.cshtml
+~/Views/Shared/SearchUsersByName.vbhtml
+Controller Twitter
+Action SearchUsersByName
+Date 26-12-2018 11:04:24
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 15:54:42
+Erorr Object reference not set to an instance of an object.
+Controller Twitter
+Action getusers
+Date 26-12-2018 17:54:44
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 17:55:12
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 17:58:06
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 17:59:02
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 18:00:28
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 18:02:10
+Erorr The entity or complex type 'DOTNETModel.Tweet' cannot be constructed in a LINQ to Entities query.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 18:16:47
+Erorr The entity or complex type 'DOTNETModel.Tweet' cannot be constructed in a LINQ to Entities query.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 18:17:30
+Erorr The entity or complex type 'DOTNETModel.Tweet' cannot be constructed in a LINQ to Entities query.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 18:17:34
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 21:49:56
+Erorr The entity or complex type 'DOTNETModel.Tweet' cannot be constructed in a LINQ to Entities query.
+Controller Twitter
+Action GetTweetMessages
+Date 26-12-2018 22:31:46
+Erorr The entity or complex type 'DOTNETModel.Tweet' cannot be constructed in a LINQ to Entities query.
+Controller Twitter
+Action GetTweetMessages
+Date 27-12-2018 11:19:47
+Erorr Unable to create a constant value of type 'TwitterClone_DAL.Follower'. Only primitive types or enumeration types are supported in this context.
+Controller Twitter
+Action GetTweetMessages
+Date 27-12-2018 12:57:05
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 27-12-2018 14:13:10
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 27-12-2018 14:14:20
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 27-12-2018 14:15:06
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 27-12-2018 14:21:28
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action GetTweetMessages
+Date 27-12-2018 14:29:23
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action Home
+Date 27-12-2018 14:37:31
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action Home
+Date 27-12-2018 14:37:48
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action Home
+Date 27-12-2018 14:44:07
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action Home
+Date 27-12-2018 14:44:38
+Erorr The ObjectContext instance has been disposed and can no longer be used for operations that require a connection.
+Controller Twitter
+Action Home
+Date 27-12-2018 14:44:42
+Erorr The view 'SearchUsersByName' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Twitter/SearchUsersByName.aspx
+~/Views/Twitter/SearchUsersByName.ascx
+~/Views/Shared/SearchUsersByName.aspx
+~/Views/Shared/SearchUsersByName.ascx
+~/Views/Twitter/SearchUsersByName.cshtml
+~/Views/Twitter/SearchUsersByName.vbhtml
+~/Views/Shared/SearchUsersByName.cshtml
+~/Views/Shared/SearchUsersByName.vbhtml
+Controller Twitter
+Action SearchUsersByName
+Date 27-12-2018 15:02:12
+Erorr The view 'SearchUsersByName' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Twitter/SearchUsersByName.aspx
+~/Views/Twitter/SearchUsersByName.ascx
+~/Views/Shared/SearchUsersByName.aspx
+~/Views/Shared/SearchUsersByName.ascx
+~/Views/Twitter/SearchUsersByName.cshtml
+~/Views/Twitter/SearchUsersByName.vbhtml
+~/Views/Shared/SearchUsersByName.cshtml
+~/Views/Shared/SearchUsersByName.vbhtml
+Controller Twitter
+Action SearchUsersByName
+Date 27-12-2018 15:04:25

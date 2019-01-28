@@ -1,0 +1,55 @@
+﻿@model TwitterClone_MVC_WebAPI.Models.Person
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/WithOutMenuView.cshtml";
+}
+@Scripts.Render("~/bundles/jquery", "~/bundles/jqueryval")
+<h2>Login</h2>
+<div class="container">
+  @using (Html.BeginForm("Login", "User"))
+  {
+    if (@TempData["Message"] != null)
+    {
+      if (@TempData["Message"].ToString().Contains("Invalid"))
+      {  <span class="text-danger"> @TempData["Message"].ToString() </span> }
+      else
+      {<span class="text-primary"> @TempData["Message"].ToString() </span>}
+    }
+    <table class="table table-bordered">
+      <tr>
+        <td>
+          UserName:
+        </td>
+        <td class="form-control">
+          @Html.EditorFor(model => model.username, new { htmlAttributes = new { } })
+          @Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger" })
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Password:
+        </td>
+        <td class="form-control">
+          @Html.EditorFor(model => model.password, new { htmlAttributes = new { } })
+          @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"></td>
+        <td colspan="2">
+          <input type="submit" value="Login" /> &nbsp;&nbsp;&nbsp;
+          @Html.ActionLink("Register", "SignUp")
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="text-danger">
+          @TempData["err"]
+        </td>
+      </tr>
+    </table>
+  }
+</div>
+
+

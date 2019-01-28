@@ -1,0 +1,282 @@
+﻿@model TwitterClone_MVC_WebAPI.Models.TwitterModal
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+  </script>
+  <style>
+    input[type="text"] {
+      width: 80%;
+      border: 2px solid #aaa;
+      border-radius: 4px;
+      margin: 8px 0;
+      outline: none;
+      padding: 8px;
+      box-sizing: border-box;
+      transition: 0.3s;
+    }
+
+      input[type="text"]:focus {
+        border-color: dodgerBlue;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+      }
+
+    .inputWithIcon input[type="text"] {
+      padding-left: 40px;
+    }
+
+    .inputWithIcon {
+      position: relative;
+    }
+
+      .inputWithIcon i {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        padding: 9px 8px;
+        color: #aaa;
+        transition: 0.3s;
+      }
+
+      .inputWithIcon input[type="text"]:focus + i {
+        color: dodgerBlue;
+      }
+
+      .inputWithIcon.inputIconBg i {
+        background-color: #aaa;
+        color: #fff;
+        padding: 9px 4px;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+        color: #fff;
+        background-color: dodgerBlue;
+      }
+  </style>
+</head>
+
+<section>
+  <nav>
+    <h2></h2>
+    @*<div class="right-inner-addon">
+        <i class="glyphicon-search"></i>
+        Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control", placeholder = "Search" })
+      </div>*@
+
+    <div class="inputWithIcon">
+      <div class="">
+        <input id="SearchBox" type="text" placeholder="Search Twitter">
+        <button class="glyphicon-search right" style="margin-left:auto" ALIGN='right' id="btnSearch" value="Search">Search</button>
+      </div>@*<i class="fa fa-user fa-lg fa-fw " aria-hidden="true">
+
+      </i>*@
+
+
+
+    </div>
+    <div class="row" style="padding-top:20px; width:100%;">
+      <div class="col-md-4">
+        <ul>
+          <li>
+            <span class="" id="tweets">My Tweets (<a href="#">@Model._tweets.Count() </a>)</span>
+          </li>
+          <li>
+            <span class="" id="follow">Follower (<a href="#">@Model._follower.Count()</a>)</span>
+          </li>
+          <li>
+            <span class="" id="following">Following (<a href="#">@Model._following.Count()</a>)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <article>
+    <h2 class="text-right">
+      Welcome @Html.Display("_person.fullname"),
+    </h2>
+
+    @using (Html.BeginForm("AddTweet", "Twitter"))
+    {
+      @Html.AntiForgeryToken()
+      <div class="row">
+        What's happening?
+      </div>
+      <div class="row">
+        <div class="col-sm-5  ">
+
+          @Html.TextAreaFor(m => m._myTweet.message, new { @class = "form-control", id = "tweetId" })
+
+
+        </div>
+        <div class="col-sm-5 bottom left">
+          <input class="btn btn-primary form-control" id="btnUpdate" type="submit" formaction="AddTweet" value="Tweet" />
+
+        </div>
+      </div>
+
+      <div id="userListDiv" style="display:none">
+       
+        <table id="userListTable">
+          <thead>
+            <tr>
+              <th style="width:50%;"><h4 id="userListHeader"></h4></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div id="userListDiv1" style="display:none">
+       
+        <table id="userListTable1">
+          <thead>
+            <tr>
+              <th style="width:50%;"><h4 id="userListHeaders"></h4></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="col-sm-3 bottom left">
+          <input class="btn btn-primary form-control" id="btnFollow" type="submit" formaction="Follow" value="Follow" />
+
+        </div>
+      </div>
+
+    }
+    <div id="tweetDiv">
+      <div class="float" style="height:150px" >
+        @{Html.RenderAction("GetTweetMessages", "Twitter", new { userId = @Model._person.user_id });}
+      </div>
+    </div>
+  </article>
+</section>
+
+<script type="text/javascript">
+
+  $('#btnSearch').click(function (event) {
+
+    event.preventDefault();
+    var name = $('#SearchBox').val();
+    $.ajax({
+      type: "GET",
+      dataType: 'json',
+      url: "/Twitter/SearchUsersByName?name=" + name,
+      success: function (data) {
+        $("#userListDiv1").show();
+        $("#userListDiv").hide();
+        $("#tweetDiv").hide();
+        $("#userListTable1").find('tbody').html('');
+        if (data.lstFollower.length > 0) {
+          $("#userListHeaders").text('Do you want to follow below user ?');
+          $('btnFollow').show();
+        }
+        else
+        {
+          $('btnFollow').hide();
+        }
+        var trHTML = '';
+        trHTML += '<tr class="row"><td clas="col-sm-3">' + data.isValid + '</td></tr>';
+        debugger;
+        for (var i = 0; i < data.lstFollower.length; i++) {
+          trHTML += '<tr class="row"><td clas="col-sm-3">' + (i+1) +'.'+ data.lstFollower[i].fullname + '</td></tr>';
+        }
+
+        $("#userListTable1").append(trHTML);
+      },
+      error: function (e) {
+
+      }
+    });
+
+  });
+
+  $('#btnFollow').click(function (event) {
+
+    event.preventDefault();
+    var name = $('#SearchBox').val();
+    alert(name);
+    $.ajax({
+      type: "GET",
+      dataType: 'json',
+      url: "/Twitter/AddFollower?name=" + name,
+      success: function (data) {
+        $("#userListDiv1").show();
+        $("#userListDiv").hide();
+        $("#tweetDiv").hide();
+        $("#userListTable1").find('tbody').html('');
+        var trHTML = '';
+        trHTML += '<tr class="row"><td clas="col-sm-3">' + data.isValid + '</td></tr>';
+
+        for (var i = 0; i < data.lstFollower.length; i++) {
+          trHTML += '<tr class="row"><td clas="col-sm-3">' + (i + 1) + '.' + data.lstFollower[i].fullname + '</td></tr>';
+        }
+
+        $("#userListTable1").append(trHTML);
+      },
+      error: function (e) {
+
+      }
+    });
+
+  });
+
+
+
+  $('a').on('click', function (e) {
+
+    var type = $(this).closest('span').attr('id');
+    debugger;
+    if (type == "tweets") {
+      $("#userListDiv").hide();
+      $("#userListDiv1").hide();
+      $("#tweetDiv").show();
+    }
+    else {
+      $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "/Twitter/GetUsers?type=" + type,
+        success: function (data) {
+          $("#userListDiv").show();
+          $("#userListDiv1").hide();
+          $("#tweetDiv").hide();
+          $("#userListTable").find('tbody').html('');
+
+          if (type == "follow")
+            $("#userListHeader").text('List of Followers');
+          else
+            $("#userListHeader").text('List of Followings');
+
+          var trHTML = '';
+
+
+          $.each(data, function (index, item) {
+            //debugger;
+            for (var i = 0; i < item.length; i++) {
+              if (type == "follow") {
+                //trHTML += '<tr><td>' + item._following.followingUserName + '</td></tr>';
+                trHTML += '<tr class="row"><td>' + (i + 1) + '.' + item[i].followerUserName + '</td></tr>';
+              }
+              else {
+                //trHTML += '<tr><td>' + item._follower.followerUserName + '</td></tr>';
+                trHTML += '<tr class="row"><td>' + (i + 1) + '.' + item[i].followingUserName + '</td></tr>';
+              }
+            }
+
+          });
+
+          $("#userListTable").append(trHTML);
+
+        },
+        error: function (e) {
+
+        }
+      });
+    }
+  });
+</script>

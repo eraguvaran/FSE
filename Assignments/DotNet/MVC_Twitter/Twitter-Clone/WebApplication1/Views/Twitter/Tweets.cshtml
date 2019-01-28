@@ -1,0 +1,23 @@
+﻿@model IEnumerable<TwitterClone_MVC_WebAPI.Models.Tweet>
+
+<h2>
+  Tweets
+</h2>
+<table class="table" style="height:200px" border="1" >
+   
+
+@foreach (var item in Model) {
+    
+  <tr>
+    <td>
+      <h4>@Html.DisplayFor(modelItem => item.fullname) -  <i> @Html.DisplayFor(modelItem => item.DateTwitted)</i></h4>
+    </td>
+    </tr>
+    <tr>
+      <td>
+        @Html.DisplayFor(modelItem => item.message)
+      </td>
+    </tr>
+}
+
+</table>
