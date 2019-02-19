@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeService", "EmployeeService\EmployeeService.csproj", "{8BB6BCCE-FBAC-4151-8357-2E7C9A1EE913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFHost", "WCFHost\WCFHost.csproj", "{0F39F99D-5F33-49F3-8A41-81231A396DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClient", "MVCClient\MVCClient.csproj", "{8BDA1104-4BE8-4BB8-BFC3-F8F7C4F375A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BB6BCCE-FBAC-4151-8357-2E7C9A1EE913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB6BCCE-FBAC-4151-8357-2E7C9A1EE913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB6BCCE-FBAC-4151-8357-2E7C9A1EE913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB6BCCE-FBAC-4151-8357-2E7C9A1EE913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F39F99D-5F33-49F3-8A41-81231A396DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F39F99D-5F33-49F3-8A41-81231A396DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F39F99D-5F33-49F3-8A41-81231A396DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F39F99D-5F33-49F3-8A41-81231A396DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BDA1104-4BE8-4BB8-BFC3-F8F7C4F375A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDA1104-4BE8-4BB8-BFC3-F8F7C4F375A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDA1104-4BE8-4BB8-BFC3-F8F7C4F375A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDA1104-4BE8-4BB8-BFC3-F8F7C4F375A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

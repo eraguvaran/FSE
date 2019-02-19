@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Find Employee";
+}
+@model MVCClient.Models.EmployeeModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Find Employee</title>
+</head>
+<body>
+
+    <h2>Find Employee By Id</h2>
+
+    <div>
+        <table border="1" style="width:100%">
+            <tr>
+                <th>ID</th>
+                <th>EmployeeName</th>
+                <th>Designation</th>
+            </tr>
+            <tr>
+                <td>@Html.DisplayTextFor(model => model.Id)</td>
+                <td>@Html.DisplayTextFor(model => model.Name)</td>
+                <td>@Html.DisplayTextFor(model => model.Designation)</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

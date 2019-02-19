@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Delete User";
+}
+@model MVCClient.Models.EmployeeModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DeleteEmployee</title>
+</head>
+<body>
+
+    <h2>Delete Employee</h2>
+    <div>
+        @using (Html.BeginForm("SubmitDeleteEmployee", "Home", FormMethod.Post))
+        {
+            <form>
+                <div>
+                    @Html.LabelFor(model => model.Id)
+                    @Html.TextBoxFor(model => model.Id)
+                    @* @Html.Hidden("Emplname", Model.Empname)*@
+
+
+
+                    <input type="submit" id="submitId" value="submit" />
+
+                </div>
+            </form>
+        }
+    </div>
+
+</body>
+</html>

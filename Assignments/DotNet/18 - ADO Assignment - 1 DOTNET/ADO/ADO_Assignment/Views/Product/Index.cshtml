@@ -1,0 +1,24 @@
+﻿@model ADO_Assignment.Models.ProdutSupplierModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div id="Products">
+  <div class="float" style="height:150px"><h1>  Product Details </h1>
+    
+    @Html.Partial("Products", @Model._ProductDetails);
+  </div>
+</div>
+<br /><br /><br />
+<br /><br /><br />
+<br /><br /><br />
+<div id="Suppliers">
+  <div class="" style="height:150px"> <h1> Suppliers Details</h1>
+
+    @Html.Partial("Suppliers", @Model._SupplierInfoDetails);
+  </div>
+</div>
