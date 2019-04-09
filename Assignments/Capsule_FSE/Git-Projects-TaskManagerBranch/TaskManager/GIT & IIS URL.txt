@@ -1,0 +1,6 @@
+GIT URL: 
+https://github.com/SenthilkumarAbi/Git-Projects/tree/TaskManagerBranch
+
+IIS URL: 
+Service: http://localhost/TaskManagerService
+UI: http://localhost:8200/

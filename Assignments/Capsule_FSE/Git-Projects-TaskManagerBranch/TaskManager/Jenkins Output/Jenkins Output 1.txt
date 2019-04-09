@@ -1,0 +1,120 @@
+﻿Started by user Senthil
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] node
+Running on Jenkins in C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline
+[Pipeline] {
+[Pipeline] stage (Checkout Code)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Checkout Code
+Proceeding
+[Pipeline] git
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/SathyaCog/TaskManager.git # timeout=10
+Fetching upstream changes from https://github.com/SathyaCog/TaskManager.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/SathyaCog/TaskManager.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 2769378d341a4373f2620cc554d1963f07fa1722 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 2769378d341a4373f2620cc554d1963f07fa1722
+ > git.exe branch -a -v --no-abbrev # timeout=10
+ > git.exe branch -D master # timeout=10
+ > git.exe checkout -b master 2769378d341a4373f2620cc554d1963f07fa1722
+Commit message: "TaskMnager code coverage and NUnit changes"
+ > git.exe rev-list --no-walk c9205a2ef3e1374f932963a7b14acaee59820cf0 # timeout=10
+[Pipeline] stage (Nuget Installation)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Nuget Installation
+Proceeding
+[Pipeline] bat
+[TaskManager-Pipeline] Running batch script
+
+C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline>"C:/Nuget/nuget.exe" restore  "C:/Program Files (x86)/Jenkins/workspace/TaskManager-Pipeline/TaskManagerService/TaskManagerService.sln" 
+MSBuild auto-detection: using msbuild version '15.8.169.51996' from 'C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\bin'.
+All packages listed in packages.config are already installed.
+[Pipeline] stage (Build)
+Using the ‘stage’ step without a block argument is deprecated
+Entering stage Build
+Proceeding
+[Pipeline] bat
+[TaskManager-Pipeline] Running batch script
+
+C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline>"C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/MSBuild.exe"  "C:/Program Files (x86)/Jenkins/workspace/TaskManager-Pipeline/TaskManagerService/TaskManagerService.sln" /p:Configuration=Release /p:Platform="Any CPU" /p:ProductVersion=1.0.0.15 
+Microsoft (R) Build Engine version 15.8.169+g1ccb72aefa for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 03-10-2018 12:11:20.
+Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Any CPU".
+Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService.sln" (1) is building "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService\TaskManagerService.csproj" (2) on node 1 (default targets).
+Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService\TaskManagerService.csproj" (2) is building "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.BusinessLayer\Task.BusinessLayer.csproj" (3:2) on node 1 (default targets).
+Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.BusinessLayer\Task.BusinessLayer.csproj" (3:2) is building "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.DataAccessLayer\Task.DataAccessLayer.csproj" (4:2) on node 1 (default targets).
+EntityDeployNonEmbeddedResources:
+Skipping target "EntityDeployNonEmbeddedResources" because it has no outputs.
+EntityDeployEmbeddedResources:
+Skipping target "EntityDeployEmbeddedResources" because all output files are up-to-date with respect to the input files.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyFilesMarkedCopyLocal:
+  Touching "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.DataAccessLayer\obj\Release\Task.DataAccessLayer.csproj.CopyComplete".
+_CopyAppConfigFile:
+  Copying file from "App.Config" to "bin\Release\Task.DataAccessLayer.dll.config".
+CopyFilesToOutputDirectory:
+  Task.DataAccessLayer -> C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.DataAccessLayer\bin\Release\Task.DataAccessLayer.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.DataAccessLayer\Task.DataAccessLayer.csproj" (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.DataAccessLayer\bin\Release\Task.DataAccessLayer.dll.config" to "bin\Release\Task.DataAccessLayer.dll.config".
+  Touching "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.BusinessLayer\obj\Release\Task.BusinessLayer.csproj.CopyComplete".
+CopyFilesToOutputDirectory:
+  Task.BusinessLayer -> C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.BusinessLayer\bin\Release\Task.BusinessLayer.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.BusinessLayer\Task.BusinessLayer.csproj" (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.BusinessLayer\bin\Release\Task.DataAccessLayer.dll.config" to "bin\Task.DataAccessLayer.dll.config".
+  Touching "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService\obj\Release\TaskManagerService.csproj.CopyComplete".
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  TaskManagerService -> C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService\bin\TaskManagerService.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService\TaskManagerService.csproj" (default targets).
+Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService.sln" (1) is building "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.NUnitTest\Task.NUnitTest.csproj" (5) on node 1 (default targets).
+GenerateBindingRedirects:
+  No suggested binding redirects from ResolveAssemblyReferences.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.DataAccessLayer\bin\Release\Task.DataAccessLayer.dll.config" to "bin\Release\Task.DataAccessLayer.dll.config".
+  Touching "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.NUnitTest\obj\Release\Task.NUnitTest.csproj.CopyComplete".
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+  Copying file from "app.config" to "bin\Release\Task.NUnitTest.dll.config".
+CopyFilesToOutputDirectory:
+  Task.NUnitTest -> C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.NUnitTest\bin\Release\Task.NUnitTest.dll
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\Task.NUnitTest\Task.NUnitTest.csproj" (default targets).
+Done Building Project "C:\Program Files (x86)\Jenkins\workspace\TaskManager-Pipeline\TaskManagerService\TaskManagerService.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.96
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS

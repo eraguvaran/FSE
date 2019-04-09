@@ -1,0 +1,325 @@
+Executing Benchmarks in C:\Raguvaran\Projects\Angular\TaskManager\TaskManagerService\Task.NUnitTest\bin\Debug\Task.NUnitTest.dll
+------------ STARTING Task.NUnitTest.LoadTest.MemoryTests+GetTaskMemory_Test ----------
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0089096
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 1,37,91,782.40 , ns / bytes: 72.51
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0012398
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 9,91,05,299.38 , ns / bytes: 10.09
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0009992
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 12,29,71,818.96 , ns / bytes: 8.13
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0011818
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 10,39,71,119.13 , ns / bytes: 9.62
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0010329
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 11,89,59,107.81 , ns / bytes: 8.41
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0011720
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 10,48,41,645.43 , ns / bytes: 9.54
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0016285
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 7,54,51,925.60 , ns / bytes: 13.25
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0029192
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 4,20,92,955.28 , ns / bytes: 23.76
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0035404
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 3,47,07,158.35 , ns / bytes: 28.81
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0036710
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 3,34,72,803.35 , ns / bytes: 29.88
+--------------- END WARMUP ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0030348
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 4,04,89,245.04 , ns / bytes: 24.70
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0028292
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 4,34,32,363.14 , ns / bytes: 23.02
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0040729
+TotalBytesAllocated - bytes: 1,18,936.00 ,bytes: /s 2,92,01,367.06 , ns / bytes: 34.24
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0064913
+TotalBytesAllocated - bytes: 1,20,808.00 ,bytes: /s 1,86,10,736.82 , ns / bytes: 53.73
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0033075
+TotalBytesAllocated - bytes: 1,22,680.00 ,bytes: /s 3,70,91,234.52 , ns / bytes: 26.96
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0053017
+TotalBytesAllocated - bytes: 1,16,360.00 ,bytes: /s 2,19,47,428.78 , ns / bytes: 45.56
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0018986
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 6,47,19,101.12 , ns / bytes: 15.45
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0013917
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 8,82,89,393.01 , ns / bytes: 11.33
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0010414
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 11,79,84,432.61 , ns / bytes: 8.48
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0059054
+TotalBytesAllocated - bytes: 1,22,880.00 ,bytes: /s 2,08,07,745.11 , ns / bytes: 48.06
+--------------- END RUN ---------------
+
+--------------- RESULTS: Task.NUnitTest.LoadTest.MemoryTests+GetTaskMemory_Test ---------------
+--------------- DATA ---------------
+TotalBytesAllocated: Max: 1,22,880.00 bytes, Average: 1,21,606.40 bytes, Min: 1,16,360.00 bytes, StdDev: 2,265.15 bytes
+TotalBytesAllocated: Max / s: 11,79,84,432.61 bytes, Average / s: 4,82,57,304.72 bytes, Min / s: 1,86,10,736.82 bytes, StdDev / s: 3,27,13,352.31 bytes
+
+
+------------ FINISHED Task.NUnitTest.LoadTest.MemoryTests+GetTaskMemory_Test ----------
+------------ STARTING Task.NUnitTest.LoadTest.MemoryTests+GetParentTaskMemory_Test ----------
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0020130
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 5,29,03,772.79 , ns / bytes: 18.90
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0017237
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 6,17,82,178.22 , ns / bytes: 16.19
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0013491
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 7,89,37,381.40 , ns / bytes: 12.67
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0054604
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 1,95,03,047.35 , ns / bytes: 51.27
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0058436
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 1,82,24,299.07 , ns / bytes: 54.87
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0052160
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 2,04,17,177.91 , ns / bytes: 48.98
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0034705
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 3,06,86,009.34 , ns / bytes: 32.59
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0044275
+TotalBytesAllocated - bytes: 1,05,640.00 ,bytes: /s 2,38,59,858.34 , ns / bytes: 41.91
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0015052
+TotalBytesAllocated - bytes: 1,06,888.00 ,bytes: /s 7,10,08,715.99 , ns / bytes: 14.08
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0014988
+TotalBytesAllocated - bytes: 1,08,136.00 ,bytes: /s 7,21,44,534.59 , ns / bytes: 13.86
+--------------- END WARMUP ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0018636
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 5,71,42,857.14 , ns / bytes: 17.50
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0019857
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 5,36,31,284.92 , ns / bytes: 18.65
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0030963
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 3,43,94,377.84 , ns / bytes: 29.07
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0037674
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 2,82,67,270.67 , ns / bytes: 35.38
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0043157
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 2,46,76,223.43 , ns / bytes: 40.52
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0011285
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 9,43,66,729.68 , ns / bytes: 10.60
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0011972
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 8,89,52,245.19 , ns / bytes: 11.24
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0012484
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 8,53,04,169.51 , ns / bytes: 11.72
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0015859
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 6,71,50,928.17 , ns / bytes: 14.89
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0013132
+TotalBytesAllocated - bytes: 1,06,496.00 ,bytes: /s 8,10,91,617.93 , ns / bytes: 12.33
+--------------- END RUN ---------------
+
+--------------- RESULTS: Task.NUnitTest.LoadTest.MemoryTests+GetParentTaskMemory_Test ---------------
+--------------- DATA ---------------
+TotalBytesAllocated: Max: 1,06,496.00 bytes, Average: 1,06,496.00 bytes, Min: 1,06,496.00 bytes, StdDev: 0.00 bytes
+TotalBytesAllocated: Max / s: 9,43,66,729.68 bytes, Average / s: 6,14,97,770.45 bytes, Min / s: 2,46,76,223.43 bytes, StdDev / s: 2,60,17,668.24 bytes
+
+
+------------ FINISHED Task.NUnitTest.LoadTest.MemoryTests+GetParentTaskMemory_Test ----------
+------------ STARTING Task.NUnitTest.LoadTest.MemoryTests+GetTaskByIdMemory_Test ----------
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0012300
+TotalBytesAllocated - bytes: 1,31,296.00 ,bytes: /s 10,67,37,773.15 , ns / bytes: 9.37
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0013674
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 9,58,50,234.01 , ns / bytes: 10.43
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0015773
+TotalBytesAllocated - bytes: 1,28,736.00 ,bytes: /s 8,16,13,470.38 , ns / bytes: 12.25
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0017587
+TotalBytesAllocated - bytes: 1,27,456.00 ,bytes: /s 7,24,70,887.92 , ns / bytes: 13.80
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0012851
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 10,19,92,031.87 , ns / bytes: 9.80
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0013303
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 9,85,24,695.32 , ns / bytes: 10.15
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0012288
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 10,66,66,666.67 , ns / bytes: 9.38
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0013051
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 10,04,24,975.48 , ns / bytes: 9.96
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0012377
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 10,58,94,519.13 , ns / bytes: 9.44
+--------------- END WARMUP ---------------
+
+--------------- BEGIN WARMUP ---------------
+Elapsed: 00:00:00.0034359
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 3,81,47,274.31 , ns / bytes: 26.21
+--------------- END WARMUP ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0014685
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 8,92,50,435.79 , ns / bytes: 11.20
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0013943
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 9,40,02,447.98 , ns / bytes: 10.64
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0012450
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 10,52,77,587.39 , ns / bytes: 9.50
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0013768
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 9,51,96,777.19 , ns / bytes: 10.50
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0013713
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 9,55,81,829.50 , ns / bytes: 10.46
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0031995
+TotalBytesAllocated - bytes: 1,34,536.00 ,bytes: /s 4,20,48,106.41 , ns / bytes: 23.78
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0016460
+TotalBytesAllocated - bytes: 1,33,272.00 ,bytes: /s 8,09,63,258.16 , ns / bytes: 12.35
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0015125
+TotalBytesAllocated - bytes: 1,32,008.00 ,bytes: /s 8,72,76,093.09 , ns / bytes: 11.46
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0023065
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 5,68,25,749.17 , ns / bytes: 17.60
+--------------- END RUN ---------------
+
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:00.0017800
+TotalBytesAllocated - bytes: 1,31,072.00 ,bytes: /s 7,36,33,748.80 , ns / bytes: 13.58
+--------------- END RUN ---------------
+
+--------------- RESULTS: Task.NUnitTest.LoadTest.MemoryTests+GetTaskByIdMemory_Test ---------------
+--------------- DATA ---------------
+TotalBytesAllocated: Max: 1,34,536.00 bytes, Average: 1,31,732.00 bytes, Min: 1,31,072.00 bytes, StdDev: 1,218.35 bytes
+TotalBytesAllocated: Max / s: 10,52,77,587.39 bytes, Average / s: 8,20,05,603.35 bytes, Min / s: 4,20,48,106.41 bytes, StdDev / s: 1,95,10,388.16 bytes
+
+
+------------ FINISHED Task.NUnitTest.LoadTest.MemoryTests+GetTaskByIdMemory_Test ----------
