@@ -1,11 +1,15 @@
-Step 1: Open the browaser(Chrome) and give the url address as "http://localhost:8200/", Add Task page will open.
+Step 1: Open the browaser(Chrome) and give the url address as "http://localhost/TaskmanagerUI/", Add Task page will open.
+
 
 Step 2: Provide the required details and click Save button. Upon successful save, success message will be displayed.
 
+
 Step 3: Click View Task link to all the added task.
+
 
 Step 4: In View Task page, click Edit Task button to edit the specific task and Edit Task page will open. Provide required fields 
 	in the Edit page and click Update Button.
+
 
 Step 5: In View Task page, click End Task button end the task. Once the task was Ended, that task will not be edited.
 

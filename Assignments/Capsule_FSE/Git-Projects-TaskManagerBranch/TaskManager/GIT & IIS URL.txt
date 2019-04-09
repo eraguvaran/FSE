@@ -1,6 +1,9 @@
-GIT URL: 
-https://github.com/SenthilkumarAbi/Git-Projects/tree/TaskManagerBranch
+GIT URL: https://github.com/eraguvaran/FSE/tree/master/Assignments/Capsule_FSE/Git-Projects-TaskManagerBranch
 
-IIS URL: 
+
+
+IIS 
+URL: 
 Service: http://localhost/TaskManagerService
-UI: http://localhost:8200/
+
+UI: http://localhost/TaskmanagerUI
