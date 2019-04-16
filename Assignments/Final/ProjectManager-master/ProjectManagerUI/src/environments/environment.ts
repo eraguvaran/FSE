@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  origin: 'http://localhost:50329'
+  origin: 'http://localhost/ProjectManagerService'
 };
 
 /*

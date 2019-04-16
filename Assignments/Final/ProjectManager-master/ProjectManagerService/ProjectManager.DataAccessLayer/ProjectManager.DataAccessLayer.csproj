@@ -98,6 +98,7 @@
       <DependentUpon>ProjectModel.edmx</DependentUpon>
       <LastGenOutput>ProjectModel.Context.cs</LastGenOutput>
     </Content>
+    <Content Include="ProjectModel.edmx.sql" />
     <Content Include="ProjectModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ProjectModel.edmx</DependentUpon>
