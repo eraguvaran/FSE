@@ -50,9 +50,9 @@ namespace ProjectManagerService.Tests.UnitTest
                 {
                     UserID=1,
                     ProjectID=1,
-                    FirstName="Sathya",
-                    LastName="Natarajan",
-                    EmployeeID="433461"
+                    FirstName="Raguvaran",
+                    LastName="Eswaramoorthi",
+                    EmployeeID="226958"
                 },
                 new Users
                 {
@@ -60,7 +60,7 @@ namespace ProjectManagerService.Tests.UnitTest
                     ProjectID=1,
                     FirstName="Murali",
                     LastName="S",
-                    EmployeeID="433465"
+                    EmployeeID="226958"
                 },
                 new Users
                 {

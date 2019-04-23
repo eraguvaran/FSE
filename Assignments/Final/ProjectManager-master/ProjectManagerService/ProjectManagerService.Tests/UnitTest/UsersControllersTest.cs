@@ -90,9 +90,9 @@ namespace ProjectManagerService.Tests.UnitTest
             ProjectMangerModel.Users model = new ProjectMangerModel.Users
             {
                 UserID = 1,
-                FirstName = "Sathya",
-                LastName = "Natarajan",
-                EmployeeID = "433465"
+                FirstName = "Raguvaran",
+                LastName = "Eswaramoorthi",
+                EmployeeID = "226958"
             };
 
             // Act
@@ -111,9 +111,9 @@ namespace ProjectManagerService.Tests.UnitTest
             ProjectMangerModel.Users model = new ProjectMangerModel.Users
             {
                 UserID = 1,
-                FirstName = "Sathya",
-                LastName = "Natarajan",
-                EmployeeID = "433465"
+                FirstName = "Raguvaran",
+                LastName = "Eswaramoorthi",
+                EmployeeID = "226958"
             };
 
             // Act
@@ -130,8 +130,8 @@ namespace ProjectManagerService.Tests.UnitTest
             ProjectMangerModel.Users model = new ProjectMangerModel.Users
             {
                 UserID = 1,
-                FirstName = "Sathya",
-                LastName = "Natarajan",
+                FirstName = "Raguvaran",
+                LastName = "Eswaramoorthi",
                 EmployeeID = "433461"
             };
 
@@ -151,8 +151,8 @@ namespace ProjectManagerService.Tests.UnitTest
             ProjectMangerModel.Users model = new ProjectMangerModel.Users
             {
                 UserID = 1,
-                FirstName = "Sathya",
-                LastName = "Natarajan",
+                FirstName = "Raguvaran",
+                LastName = "Eswaramoorthi",
                 EmployeeID = "433461"
             };
 
